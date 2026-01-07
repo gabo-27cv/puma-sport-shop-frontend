@@ -1,0 +1,12 @@
+# Node modules (no subirlos al repo)
+node_modules
+
+# Carpeta de build generada por Vite
+dist
+
+# Variables de entorno locales
+.env
+
+# Logs
+npm-debug.log
+yarn-error.log
