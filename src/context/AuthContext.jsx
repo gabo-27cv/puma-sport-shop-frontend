@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
       authService.getCurrentUser()
         .then(data => {
           console.log('✅ Usuario cargado desde token:', data);
-          setUser(data);
+          setUser(data.user);
         })
         .catch((err) => {
           console.error('❌ Error cargando usuario:', err);
