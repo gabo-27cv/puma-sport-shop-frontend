@@ -25,7 +25,7 @@ export default function Login() {
       console.log('✅ Login exitoso, usuario:', response);
       
       // Redirigir según el rol del usuario (usando TUS rutas)
-      if (response.user?.role === 'admin') {
+      if (response.user?.rol === 'admin') {
         console.log('🔐 Usuario admin, redirigiendo al panel...');
         navigate('/admin');
       } else {
